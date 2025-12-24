@@ -10,7 +10,6 @@
 
 Проект демонстрирует навыки автоматизации тестирования веб- и мобильных пользовательских интерфейсов с использованием современных инструментов и подходов.
 
-
 ## Покрытие тестами
 
 ### Веб-тесты (ru.wikipedia.org)
@@ -30,7 +29,6 @@
 
 **Всего:** 3 теста
 
-
 ## Используемые технологии
 
 - Java 11
@@ -38,7 +36,6 @@
 - Appium
 - TestNG
 - Maven
-
 
 ## Требования для запуска
 
@@ -57,7 +54,6 @@
 - Установить **Android Studio**
 - Создать и запустить **Android-эмулятор**
 - Установить приложение **Wikipedia** на эмулятор
-
 
 ## Загрузка APK Wikipedia
 
@@ -79,11 +75,11 @@ caps.setCapability("app", "ПУТЬ_К_APK_ФАЙЛУ");
 Запуск тестов
 
 Запуск всех тестов
-  ```bash
+  ``bash
   mvn clean test
 
 Запуск только веб-тестов
-  ```bash
+  ``bash
   mvn test -Dtest=WikipediaTests
 
 Запуск мобильных тестов
@@ -98,12 +94,11 @@ emulator -avd Medium_Phone_API_36_1
 
 appium -p 4723
 
-
 Запустить мобильные тесты:
 
 mvn test -Dtest=WikipediaMobileTests
 
-## Скриншоты
+### Скриншоты
 
 <img width="758" height="207" alt="test" src="https://github.com/user-attachments/assets/ffa4851f-96e8-4a1a-b498-5e1d788a35b5" />
 <img width="810" height="210" alt="mobtest1" src="https://github.com/user-attachments/assets/90ffa062-9166-4ce8-97c1-5e1ab53dd2c6" />
