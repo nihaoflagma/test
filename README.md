@@ -72,29 +72,26 @@ https://github.com/wikimedia/apps-android-wikipedia/releases
 
 caps.setCapability("app", "ПУТЬ_К_APK_ФАЙЛУ");
 
-Запуск тестов
+## Запуск тестов
 
-Запуск всех тестов
-  ``bash
-  mvn clean test
+mvn clean test
 
-Запуск только веб-тестов
-  ``bash
-  mvn test -Dtest=WikipediaTests
+## Запуск только веб-тестов
 
-Запуск мобильных тестов
+mvn test -Dtest=WikipediaTests
 
-Запустить Android эмулятор
+## Запуск мобильных тестов
+
+## Запустить Android эмулятор
 (через Android Studio или командой):
 
 emulator -avd Medium_Phone_API_36_1
 
-
-Запустить Appium сервер:
+## Запустить Appium сервер:
 
 appium -p 4723
 
-Запустить мобильные тесты:
+## Запустить мобильные тесты:
 
 mvn test -Dtest=WikipediaMobileTests
 
@@ -105,7 +102,7 @@ mvn test -Dtest=WikipediaMobileTests
 <img width="548" height="673" alt="mobtest" src="https://github.com/user-attachments/assets/ca998388-252f-4a11-9b7a-dd2dabae9c37" />
 <img width="575" height="291" alt="appium" src="https://github.com/user-attachments/assets/d915886e-a6b9-4af8-80b3-b7589d285f0d" />
 
-Примечания
+## Примечания
 -Мобильные тесты запускаются на Android-эмуляторе через Appium
 
 -Appium сервер должен быть запущен до старта мобильных тестов
